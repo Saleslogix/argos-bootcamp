@@ -1,0 +1,41 @@
+{
+  "projectName": "SalesLogix Mobile BootCamp Demo Module",
+  "licenseText": "",
+  "deployDir": "deploy/",
+  "pkgs": [
+    {
+      "name": "SalesLogix Mobile BootCamp Demo Module",
+      "file": "content/javascript/argos-bootcamp.js",
+      "isDebug": true,
+      "fileIncludes": [
+        {
+          "text": "ApplicationModule.js",
+          "path": "../src"
+        }
+      ]
+    }
+  ],
+  "resources": [
+    {
+      "src": "../content",
+      "dest": "content",
+      "filters": ".*(\\.css|\\.jpg|\\.png|\\.gif)"
+    },
+    {
+      "src": "../min",
+      "dest": "content",
+      "filters": ".*(\\.css)"
+    },
+    {
+      "src": "../configuration",
+      "dest": "configuration/bootcamp",
+      "filters": ".*\\.js"
+    },
+    {
+      "src": "../localization",
+      "dest": "localization/bootcamp",
+      "filters": ".*\\.js"
+    }
+  ]
+}
+

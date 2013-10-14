@@ -1,0 +1,8 @@
+{
+  "name": "argos-bootcamp",
+  "version": "3.0.1",
+  "devDependencies": {
+    "grunt": "~0.4.0",
+    "grunt-contrib-less": "~0.7.0"
+  }
+}
