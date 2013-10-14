@@ -39,8 +39,10 @@ define('Mobile/Bootcamp/ApplicationModule', [
             this.registerContactCustomizations();
         },
         registerContactCustomizations: function() {
-            this.registerCustomization('list/tools', 'contact_list', {
-                at: function(tool) { return tool.id === 'new' },
+            this.registerCustomization('detail/tools', 'contact_detail', {
+                at: function(tool) {
+                    return tool.id === 'edit'
+                },
                 type: 'insert',
                 where: 'after',
                 value: {
